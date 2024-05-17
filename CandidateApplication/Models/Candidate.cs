@@ -3,11 +3,8 @@ using System.Collections.Generic;
 
 public class Candidate
 {
-    [JsonProperty("id")]
+    [JsonProperty("candidateId")]
     public string CandidateID { get; set; }
-
-    [JsonProperty("programID")]
-    public string ProgramID { get; set; }
 
     [JsonProperty("personalInformation")]
     public PersonalInformation PersonalInformation { get; set; }
@@ -19,7 +16,6 @@ public class Candidate
 public class CandidateDTO
 {
     public string CandidateID { get; set; }
-    public string ProgramID { get; set; }
     public PersonalInformationDTO PersonalInformation { get; set; }
     public Dictionary<string, string> Answers { get; set; }
 }

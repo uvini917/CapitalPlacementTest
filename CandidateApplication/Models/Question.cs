@@ -3,11 +3,8 @@ using System.Collections.Generic;
 
 public class Question
 {
-    [JsonProperty("questionID")]
+    [JsonProperty("id")]
     public string QuestionID { get; set; }
-
-    [JsonProperty("programID")]
-    public string ProgramID { get; set; }
 
     [JsonProperty("type")]
     public string Type { get; set; }
@@ -28,7 +25,6 @@ public class Question
 public class QuestionDTO
 {
     public string QuestionID { get; set; }
-    public string ProgramID { get; set; }
     public string Type { get; set; }
     public string QuestionText { get; set; }
     public List<string> Choices { get; set; }
