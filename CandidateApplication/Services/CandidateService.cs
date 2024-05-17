@@ -23,7 +23,7 @@ namespace CandidateApplication.Services
                 Answers = candidateDto.Answers
             };
 
-            await _container.CreateItemAsync(candidate, new PartitionKey(candidate.ProgramID));
+            await _container.CreateItemAsync(candidate, new PartitionKey(candidate.CandidateID));
             return candidate;
         }
 
